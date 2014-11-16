@@ -1,0 +1,41 @@
+.l-center-wrapper {
+	width: 1200px;
+	margin: auto;
+}
+
+.prices,
+.resourses,
+.about {
+	outline: 2px dashed red;
+}
+
+.index {
+	outline: 2px solid black;
+	width: auto;
+}
+
+.resourses {
+	float: left;
+	width: 40%;
+}
+
+.prices {
+	float: right;
+	width: 60%;
+}
+
+.clearfix {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.about .about-column1 {
+	float: left;
+	width: 40%;
+}
+
+footer>div>div {
+	float: left;
+	width: 33%;
+}

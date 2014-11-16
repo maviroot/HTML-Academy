@@ -1,0 +1,18 @@
+.l-center-wrapper {
+	width: 1200px;
+	margin: auto;
+}
+
+.filters {
+	float: left;
+}
+
+.catalog-items ul li {
+	width: 300px;
+	display: inline-block;
+}
+
+footer>div>div {
+	float: left;
+	width: 33%;
+}
