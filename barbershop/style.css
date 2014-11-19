@@ -2,15 +2,47 @@ html, body{
     padding:0;
     margin:0;
 }
+
+body {
+    background-image: url("img/bg.jpg");
+    background-size: contain;
+}
+
 .layout-center-wrapper{
-    width:500px;
+    width: 960px;
     min-height:50px;
     margin:0 auto;
-    background:#27ae60;
+    //background:#27ae60;
 }
-.header{
-    padding:25px 0;
-    background:black;
+.header {
+    padding: 29px 0;
+    height: 72px;
+    background: black;
+}
+
+.header a {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+}
+
+.header ul{
+    list-style: none;
+}
+.header ul li {
+    float: left;
+    margin-right: 42px;
+}
+.header ul li:last-child {
+    margin-right: 0;
+}
+
+.account-menu {
+    float: right;
+    margin-right: 32px;
 }
 .logo{
     width:250px;
@@ -31,10 +63,12 @@ html, body{
 }
 .features li{
     float:left;
-    width:150px;
+    width: 300px;
     min-height:50px;
-    margin-right:25px;
-    background:#f39c12;
+    margin-right:10px;
+    margin-left: 10px;
+    text-align: center;
+    //background:#f39c12;
 }
 .features li:last-child{
     margin-right:0;
