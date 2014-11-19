@@ -1,31 +1,122 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Barbershop Borodinsky</title>
         <meta charset="utf-8">
-        <title>Barbershop</title>
-        <link rel="stylesheet" href="main.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="">
-           <div class="l-center-wrapper">
-                <ul class="nav">
-                    <li class="item"><a href="#">Главная</a></li>
-                    <li class="item"><a href="#">Информация</a></li>
-                    <li class="item"><a href="#">Новости</a></li>
-                    <li class="item"><a href="#">Прайс-лист</a></li>
-                    <li class="item"><a href="#">Магазин</a></li>
-                    <li class="item"><a href="#">Контакты</a></li>
+        <div class="header">
+            <div class="layout-center-wrapper">
+                <ul class="top-menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
-                <div class="login"><a href="#">Вход</a></div>
-            </div>
-        </header>
-        <div class="main-content">
-            <div class="features">
-                
+                <div class="account-menu">
+                    <a class="account-menu-enter" href="#">Вход</a>
+                </div>
             </div>
         </div>
-        <footer>
+        <div class="layout-center-wrapper">
+            <div class="logo"><a href="#">Barbershop Borodinski</a></div>
+            <ul class="features">
+                <li>
+                    <div class="feature-title">Быстро</div>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
+                </li>
+                <li>
+                    <div class="feature-title">Круто</div>
+                    <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+                </li>
+                <li>
+                    <div class="feature-title">Дорого</div>
+                    <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+                </li>
+            </ul>
 
-        </footer>
+            <div class="index-section">
+                <div class="index-left-column">
+                    <div class="index-section-title">Новости</div>
+                    <ul class="index-news">
+                        <li>
+                            <a href="#">Мы наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
+                            <span class="date">25 сентября</span>
+                        </li>
+                        <li>
+                            <a href="#">В нашей команде пополнение, Борис «Бритва» Стригунец, обладетель множетсва титулов и наград пополнил наши стройные ряды</a>
+                            <span class="date">19 сентября</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">Все новости</a>
+                </div>
+                <div class="index-right-column">
+                    <div class="index-section-title">Фотогалерея</div>
+                    <div class="gallery">
+                        <div class="gallery-items">
+                            <div class="gallery-item"><img src="" alt="Интерьер"></div>
+                            <div class="gallery-item"><img src="" alt="Интерьер"></div>
+                            <div class="gallery-item"><img src="" alt="Интерьер"></div>
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="btn btn-prev">Назад</button>
+                            <button class="btn btn-next">Вперед</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="index-section">
+                <div class="index-left-column">
+                    <div class="index-section-title">Контактная информация</div>
+                    <div class="contacts-address">
+                        <p><strong>Barbershop «Borodinski»</strong></p>
+                        <p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
+                        <p>Телефон: +7 (495) 666-02-666</p>
+                    </div>
+                    <div class="contacts-work-time">
+                        <p>Время работы: <br> пн — пт: с 10:00 до 22:00 <br> сб — вс: с 10:00 до 19:00</p>
+                    </div>
+                    <a href="#" class="btn">Как проехать</a>
+                    <a href="#" class="btn">Обратная связь</a>
+                </div>
+                <div class="index-right-column">
+                    <div class="index-section-title">Записаться</div>
+                    <form action="#" method="post" id="orderForm">
+                        <fieldset>
+                            <input type="text" name="date" placeholder="Дата"> 
+                            <input type="text" name="time" placeholder="Время">
+                        </fieldset>
+                        <fieldset>
+                            <input type="text" name="name" placeholder="Ваше имя"> 
+                            <input type="text" name="phone" placeholder="Телефон">
+                        </fieldset>
+                        <fieldset>
+                            <input type="submit" class="btn" value="Отправить">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="layout-center-wrapper">
+                <div class="contacts-address">
+                    <strong>Barbershop «Borodinski»</strong>
+                    <p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
+                    <p>Телефон: +7 (495) 666-02-666</p>
+                </div>
+                <div class="social-buttons">
+                    <strong>Давайте дружить!</strong>
+                    <a href="http://vk.com" class="btn-social btn-social-vk"></a>
+                    <a href="http://facebook.com" class="btn-social btn-social-fb"></a>
+                    <a href="http://instagram.com" class="btn-social btn-social-inst"></a>
+                </div>
+                <div class="copyright">Дизайн сайта:<br><a class="btn" href="http://glukhanko.ru/">glukhanko.ru</a></div>
+            </div>
+        </div>
     </body>
 </html>
