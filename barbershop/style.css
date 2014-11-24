@@ -1,60 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext);
+
+
 html, body{
     padding:0;
     margin:0;
 }
-
 body {
-    background-image: url("img/bg.jpg");
-    background-size: contain;
+    background: black url("img/bg.jpg") 50% 0 no-repeat;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-
 .layout-center-wrapper{
-    width: 960px;
-    min-height:50px;
+    width:940px;
     margin:0 auto;
+    padding: 0 10px;
     //background:#27ae60;
 }
-.header {
-    padding: 29px 0;
-    height: 72px;
-    background: black;
+.layout-center-wrapper:after {
+    content: '';
+    display: table;
+    clear: both;
 }
-
+.header{
+    background:black;
+}
 .header a {
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
     color: white;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-weight: 700;
+    text-decoration: none;
+    }
+.top-menu {
+    width: 780px;
+    float: left;
+    //outline: 3px dotted white;
+    margin: 0;
+    padding: 0;
 }
-
-.header ul{
+.top-menu li {
+    float: left;
     list-style: none;
 }
-.header ul li {
-    float: left;
-    margin-right: 42px;
+.top-menu li a{
+    display: block;
+    padding: 30px 20px;
 }
-.header ul li:last-child {
-    margin-right: 0;
+.top-menu a:hover {
+    background: #242424;
 }
-
+.top-menu a.active {
+    padding-bottom: 25px;
+    box-shadow: 0 25px 0 -20px white;
+}
+.top-menu a.active:hover {
+    background: #000;
+}
 .account-menu {
+    max-width: 140px;
     float: right;
-    margin-right: 32px;
+    //outline: 3px dotted white;
+}
+.account-menu-enter {
+    display: block;
+    padding: 30px 0;
+    padding-left: 35px;
+    position: relative;
+}
+.account-menu-enter:before {
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("img/login-icon.png") 0 0 no-repeat;
 }
 .logo{
-    width:250px;
+    width: 368px;
     min-height:50px;
-    margin:50px auto;
-    background:#f39c12;
-    text-align:center;
+    margin: auto;
+    margin-top: 60px;
 }
 .features{
-    margin:50px 0;
-    padding:0;
+    margin: auto;
+    padding: 0;
+    margin-top:80px;
     list-style:none;
+    color: white;
 }
 .features:after{
     content:"";
@@ -63,21 +95,40 @@ body {
 }
 .features li{
     float:left;
-    width: 300px;
+    width:300px;
     min-height:50px;
-    margin-right:10px;
-    margin-left: 10px;
+    margin-right:20px;
     text-align: center;
-    //background:#f39c12;
 }
 .features li:last-child{
     margin-right:0;
 }
+.feature-title {
+    font-size: 30px;
+    margin-bottom: 85px;
+    position: relative;
+}
+.feature-title:after {
+    content: '';
+    position: absolute;
+    bottom: -50;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    background: url("img/diamond.png") 0 0 no-repeat;
+}
+.features p {
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+}
 .index-section{
-    margin:30px 0;
+    margin:86px 0;
     padding:50px 0;
     min-height:50px;
     background:#f39c12;
+    background: url(img/index-section-bg.png) repeat;
 }
 .index-section:after{
     content:"";
@@ -85,18 +136,50 @@ body {
     clear:both;
 }
 .index-left-column{
+    box-sizing: border-box;
     float:left;
-    width:210px;
-    margin-left:40px;
+    width: 460px;
+    padding: 0 80px;
     min-height:100px;
-    background:#d35400;
+    //background:#d35400;
 }
 .index-right-column{
+    box-sizing: border-box;
     float:right;
-    width:210px;
-    margin-right:40px;
+    width: 460px;
+    padding: 0 80px;
     min-height:100px;
-    background:#c0392b;
+    //background:#c0392b;
+}
+.index-section-title {
+    font-size: 30px;
+    font-weight: bold;  
+}
+.index-news {
+    padding: 0;
+    margin: 30px 0;
+    list-style-type: none;    
+}
+.index-news li {
+    margin-bottom: 35px;
+}
+.index-news li:last-child {
+    margin-bottom: 0;
+}
+.index-news a {
+    font-size:  14px;
+    line-height: 24px;
+    text-decoration: none;
+    color:  black;
+    display: block;
+    margin-bottom: 10px;
+}
+.date {
+    font-family: 'Georgia';
+    font-style: italic;
+    text-transform: none;
+    font-size:  14px;
+    line-height: 24px; 
 }
 .footer{
     margin-top:60px;
