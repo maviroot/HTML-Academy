@@ -212,8 +212,31 @@ p.btn{
  .gallery-item img {
     border: 7px solid white;
  }
+.contacts-address {
+    margin-bottom: 35px;
+}
+.contacts-address p {
+    margin: 0;
+    line-height: 24px;
+    font-size: 14px;
+}
+.contacts-work-time {
+    margin-bottom: 50px;    
+}
+.contacts-work-time p {
+    margin: 0;
+    line-height: 24px;
+    font-size: 14px;
+}
+.index-left-column .btn {
+    margin-right: 20px;
+    float: left;   
+}
+.index-left-column .btn:last-child {
+    margin-right: 0px;   
+}
 .footer{
     margin-top:60px;
     padding:50px 0;
-    background:#252525;
+    background:#fff;
 }
