@@ -193,6 +193,8 @@ p.btn{
     height: 43px;
     background: #000;
     color: white;
+    font-size: 14px;
+    line-height: 24px;
 }
 .btn a {
     padding-top: 10px;
@@ -216,7 +218,7 @@ p.btn{
  .gallery-item img {
     border: 7px solid white;
  }
-.contacts-address {
+.index-section .contacts-address {
     margin-bottom: 35px;
 }
 .contacts-address p {
@@ -298,8 +300,43 @@ fieldset input[type="submit"] {
     border: none;
     //padding: 15px 0; 
 }
-.footer{
-    margin-top:60px;
+
+.index-section:last-child {
+    margin-bottom: 64px;
+}
+.footer {
     padding:50px 0;
-    background:#fff;
+    background: #222 url("img/footer-bg.png") repeat;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer .col1 {
+    float: left;
+}
+.footer .contacts-address {
+    margin-right: 150px;
+}
+.footer .social-buttons {
+    margin-right: 260px;
+}
+.footer .btn-social {
+    width: 43px;
+    height: 43px;
+    background: #000;
+}
+.footer-social {
+    margin: 0;
+    padding: 0;
+}
+.footer-social li {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: #000;
+}
+.btn-social-vk {
+    width: 20px;
+    height: 20px;
+    background: url("http://placehold.it/20x20") 0 0 no-repeat;
 }
